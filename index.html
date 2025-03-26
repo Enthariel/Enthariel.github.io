@@ -7,9 +7,65 @@
     <title>Enthariel Games</title>
 </head>
 <body>
-    <p id="text" class="es">Bienvenido a Enthariel Games</p>
-    <p id="text" class="en">Welcome to Enthariel Games</p>
+    <!-- CABECERA -->
+    <div id="header">
+        <div class="logoDegree"></div>
+    </div>
 
+    <!-- VIDEO DE FONDO -->
+    <div class="video-bg">
+        <iframe src="https://www.youtube.com/embed/P1srlu4cuNc?autoplay=1&mute=1&controls=0&loop=1&playlist=P1srlu4cuNc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media; fullscreen"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-bg-margin"></div>
+
+
+    <!-- REGION BREVE DE LA EMPRESA -->
+    <div class="entharielRegion">
+        <div id="welcome">
+            <h1 class="es">Bienvenidos a la tierra de las creaciones</h1>
+            <h1 class="en">Welcome to the land of creations</h1>
+            <p class="es">Enthariel Games es un pequeño estudio Indie de Sevilla donde nos centramos en proveer a los jugadores experiencias narrativas completas fomentando el multijugador local.</p>
+            <p class="en">Enthariel Games is a small indie studio based in Seville, where we focus on providing players with complete narrative experiences while promoting local multiplayer.</p>
+        </div>
+        <div id="news">
+            <h1 class="es">Actualidad</h1>
+            <h1 class="en">News</h1>
+            <a href="news/pined.html" id="highlight">
+                <div class="imgBox rItem85">
+                    <img src="images/luminaria/lde_0.png" alt="Luminaria" class="coverImg" />
+                </div>
+                <div class="rItem15">
+                    <h2 class="es">Próximamente en PS5 y Nintendo Switch.</h2>
+                    <h2 class="en">Cooming soon in PS5 and Nintendo Switch.</h2>
+                </div>
+            </a>
+            <div class="container">
+                <article>
+                    <p>Noticia 1</p>
+                </article>
+                <article>
+                    <p>Noticia 2</p>
+                </article>
+                <article>
+                    <p>Noticia 3</p>
+                </article>
+                <article>
+                    <p>Noticia 4</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT PARA DETECTAR EL IDIOMA -->
     <script src="scripts/languageHandler.js"></script>
+
+    <!-- SCRIPT PARA INCLUIR LA CABECERA -->
+    <!--<script src="scripts/includeHeader.js"></script>-->
 </body>
 </html>

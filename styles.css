@@ -1,15 +1,289 @@
-﻿body
+﻿:root {
+    --enthariel: #f5ec42;
+    --entharielLight: #fffa91;
+    --entharielDark: #d1b411;
+    --darkGrey: #1c1c1c;
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url('fonts/Roboto_Flex/RobotoFlex.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Por defecto*/
+body
 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-family: RobotoFlex;
+    background-color: black;
+    color: white;
+    font-weight: 600;
 }
 
-/*ESPANIOL*/
-.es{
-
+p {
+    font-size: 2vh;
 }
 
-/*ENGLISH*/
-.en{
+h1{
+    font-size: 5vh;
+    font-weight: 800;
+}
 
+h2,
+h3,
+h4,
+h5{
+    font-size: 4vh;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*IDS*/
+
+#header{
+    width: 100vw;
+    height: 12vh;
+    background-color: black;
+    box-shadow: black 1px 1px 2px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    color: var(--enthariel);
+    position: fixed;
+    z-index: 9999;
+}
+
+/*NOTICIAS*/
+
+#news{
+    text-align: left;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 3vw;
+}
+
+#highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    height: 60vh;
+    grid-column: 1;
+}
+
+#highlight img{
+    transition: 0.5s ease-in-out;
+}
+
+#highlight img:hover{
+    transform: scale(1.1);
+}
+
+#news .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+    #news .container article {
+        border-radius: 1vh;
+        padding: 1em;
+        background-color: var(--darkGrey);
+        height: 25%;
+    }
+
+/*Heights*/
+.h100{
+    height: 100vh;
+}
+
+.h80{
+    height: 80vh;
+}
+
+.h60 {
+    height: 60vh;
+}
+
+/*Flex*/
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.rItem15{
+    height: 15%;
+}
+
+.rItem20{
+    height: 20%;
+}
+
+.rItem25{
+    height: 25%;
+}
+
+.rItem30{
+    height: 30%;
+}
+
+.rItem70{
+    height: 70%;
+}
+
+.rItem80{
+    height: 80%;
+}
+
+.rItem85{
+    height: 85%;
+}
+
+/*Grid*/
+.col1{
+    grid-column: 1;
+}
+
+.col2{
+    grid-column: 2;
+}
+
+/*SVG del Logo de Fondo*/
+.logo{
+    background-image: url('images/logo/LogoEnthariel.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.logoDegree {
+    background-image: url('images/logo/LogoEnthariel_Degree.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+/*Video de Fondo*/
+.video-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0%;
+    z-index: -1;
+}
+
+    .video-bg iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+.video-bg-margin{
+    height: 90vh;
+    width: 100vw;
+}
+
+/*Regiones*/
+.entharielRegion {
+    position: relative;
+    background-color: black;
+    padding: 2vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    color: white;
+    text-align: center;
+}
+
+/*Cajas con disenios*/
+.box{
+    border-radius: 1vh;
+    padding: 1em;
+    background-color: var(--darkGrey);
+}
+
+.imgBox {
+    border-radius: 1vh;
+    background-color: var(--darkGrey);
+    overflow: hidden;
+}
+
+.roundedBorder {
+    border-radius: 1vh;
+}
+
+/*Imagenes*/
+.coverImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Animaciones*/
+@keyframes displaceBgXForward{
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x: 100%;
+        }
+    }
+
+@keyframes displaceBgXBackward {
+    0% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+/*Ajuste Responsive*/
+@media(max-width: 1200px) {
+
+    .video-bg{
+        height: 50vh;
+    }
+
+    .video-bg-margin{
+        height: 30vh;
+    }
+
+    #news{
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    col1,
+    col2{
+        grid-column: 1;
+    }
+
+    .column{
+        margin-bottom: 2vh;
+    }
 }
