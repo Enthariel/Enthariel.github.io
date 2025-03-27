@@ -584,9 +584,16 @@ a{
 .playNowBtn{
     flex: 0 1 28%;
     border-radius: 2vh;
-    padding: 1vh;
+    padding: 0.5vh;
     color: var(--enthariel);
     background-color: var(--enthariel);
+}
+
+.playNowBtnBody {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 1.5vh;
 }
 
 /*Animaciones*/
