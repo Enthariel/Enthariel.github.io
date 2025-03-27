@@ -94,7 +94,7 @@ a{
 
 /*Efecto de Hover de la noticia destacada*/
 #highlight:hover{
-    border: 2px solid grey;
+    border: 3px solid grey;
 }
 
     /*Seccion de imagen de la noticia destacada*/
@@ -142,7 +142,7 @@ a{
 
         /*Efectos de la noticia pequenia al estar sobre ella*/
         #news .container a:hover {
-            border: 2px solid grey;
+            border: 3px solid grey;
             transform: scale(1.02);
         }
 
@@ -164,6 +164,89 @@ a{
             height: 100%;
             width: 30%;
             object-fit: cover;
+        }
+
+/*JUEGOS*/
+
+#games {
+    text-align: left;
+    padding: 5vw;
+}
+
+    #games .container {
+        display: flex;
+        flex-direction: row;
+        row-gap: 1vh;
+        column-gap: 1vw;
+    }
+
+        #games .container article {
+            position: relative;
+            width: 50%;
+            height: 40vh;
+            border-radius: 1vh;
+            transition: 0.2s ease-in-out;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+    #games .container article:hover {
+        border: 3px solid grey;
+        transform: scale(1.02);
+    }
+
+        #games .container article .layer0,
+        #games .container article .layer1,
+        #games .container article .layer2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        #games .container article .layer0 {
+            z-index: 1;
+        }
+
+        #games .container article .layer1 {
+            z-index: 2;
+        }
+
+        #games .container article .layer2 {
+            z-index: 3;
+        }
+
+            #games .container article .layer0 img,
+            #games .container article .layer1 img,
+            #games .container article .layer2 img {
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+
+            #games .container article .textSection {
+                height: 100%;
+                width: 35%;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #games .container article .platform {
+                background-color: var(--darkGrey);
+                border-radius: 2vh;
+                height: 10%;
+                min-width: 30%;
+            }
+
+        #games .container article .platform img{
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
         }
 
 /*Heights*/
