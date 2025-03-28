@@ -9,19 +9,19 @@ if (window.location.pathname.endsWith("index.html")) {
         <p>JUEGOS</p>
     </a>
     <!-- TWITTER -->
-    <a href="#" class="mobileHidden">
+    <a href="https://x.com/EntharielGames" class="mobileHidden" target="_blank">
         <section class="twitter social"></section>
     </a>
     <!-- INSTAGRAM -->
-    <a href="#" class="mobileHidden">
+    <a href="https://www.instagram.com/entharielgames/" class="mobileHidden" target="_blank">
         <section class="instagram social"></section>
     </a>
     <!-- LINKEDIN -->
-    <a href="#" class="mobileHidden">
+    <a href="https://es.linkedin.com/company/enthariel-games" class="mobileHidden" target="_blank">
         <section class="linkedin social"></section>
     </a>
     <!-- YOUTUBE -->
-    <a href="#" class="mobileHidden">
+    <a href="https://www.youtube.com/@EntharielGames" class="mobileHidden" target="_blank">
         <section class="youtube social"></section>
     </a>
 `;
@@ -36,19 +36,19 @@ if (window.location.pathname.endsWith("index.html")) {
         <p>JUEGOS</p>
     </a>
     <!-- TWITTER -->
-    <a href="#" class="mobileHidden">
+    <a href="https://x.com/EntharielGames" class="mobileHidden" target="_blank">
         <section class="twitter social"></section>
     </a>
     <!-- INSTAGRAM -->
-    <a href="#" class="mobileHidden">
+    <a href="https://www.instagram.com/entharielgames/" class="mobileHidden" target="_blank">
         <section class="instagram social"></section>
     </a>
     <!-- LINKEDIN -->
-    <a href="#" class="mobileHidden">
+    <a href="https://es.linkedin.com/company/enthariel-games" class="mobileHidden" target="_blank">
         <section class="linkedin social"></section>
     </a>
     <!-- YOUTUBE -->
-    <a href="#" class="mobileHidden">
+    <a href="https://www.youtube.com/@EntharielGames" class="mobileHidden" target="_blank">
         <section class="youtube social"></section>
     </a>
 `;
