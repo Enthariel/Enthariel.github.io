@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <link href="../styles.css" rel="stylesheet" />
+
+    <!-- ESTILO DEL JUEGO, CADA JUEGO TIENE SU PROPIO CSS QUE SE COMBINA CON EL GENERAL -->
+    <link href="game-template-style.css" rel="stylesheet" />
     <link href="images/logo/logo.ico" rel="icon" type="image/x-icon" />
     <title>Titulo | Games | Enthariel Games</title>
 </head>
@@ -23,7 +26,7 @@
     </div>
     <div class="video-bg-margin"></div>
 
-    <!-- INFORMACION DEL JUEGO -->
+    <!-- INFORMACION BREVE DEL JUEGO CON COLORES DE ENTHARIEL -->
     <div class="region">
         <h1>Titulo del Juego</h1>
         <p>
@@ -36,15 +39,118 @@
             ad, commodo pretium dictum curabitur sed porttitor mauris enim, quam sociosqu
             arcu euismod odio rhoncus duis placerat.
         </p>
-        <section class="targetPlatforms">
+
+        <section id="targetPlatforms">
+
+            <!-- BOTON DE STEAM -->
             <a href="" class="playNowBtn">
                 <section class="playNowBtnBody">
+                    <section class="playNowBtnHidden">
+                        <p class="es">JUEGA YA</p>
+                        <p class="en">PLAY NOW</p>
+                    </section>
+                    <section class="playNowBtnView">
+                        <section class="steam"></section>
+                    </section>
                 </section>
             </a>
-            <a href="" class="steam"></a>
-            <a href="" class="playstation"></a>
-            <a href="" class="nintendo-switch"></a>
+
+            <!-- BOTON DE PLAYSTATION -->
+            <a href="" class="playNowBtn">
+                <section class="playNowBtnBody">
+                    <section class="playNowBtnHidden">
+                        <p class="es">PRÓXIMAMENTE</p>
+                        <p class="en">COOMING SOON</p>
+                    </section>
+                    <section class="playNowBtnView">
+                        <section class="playstation"></section>
+                    </section>
+                </section>
+            </a>
+
+            <!-- BOTON DE SWITCH -->
+            <a href="" class="playNowBtn">
+                <section class="playNowBtnBody">
+                    <section class="playNowBtnHidden">
+                        <p class="es">PRÓXIMAMENTE</p>
+                        <p class="en">COOMING SOON</p>
+                    </section>
+                    <section class="playNowBtnView">
+                        <section class="nintendo-switch"></section>
+                    </section>
+                </section>
+            </a>
+
         </section>
+    </div>
+
+    <!-- SECCION 1 -->
+    <div class="gameBox bg1">
+
+        <section>
+            <h1>FEATURE 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit quisque sollicitudin,
+                cras integer dictumst accumsan imperdiet tortor metus torquent, curabitur hac
+                aenean pulvinar pretium viverra nibh euismod. Imperdiet sed pretium sodales
+                pharetra porta nisi eleifend ullamcorper semper porttitor quis sollicitudin
+                venenatis viverra, ultricies per aliquam facilisi augue volutpat lacus neque
+                feugiat fames maecenas gravida. Libero urna ac a erat taciti sagittis non congue
+                ad, commodo pretium dictum curabitur sed porttitor mauris enim, quam sociosqu
+                arcu euismod odio rhoncus duis placerat.
+            </p>
+        </section>
+
+        <section>
+            <img src="../images/luminaria/lde_0.png" class="coverImg" alt="Gameplay" />
+        </section>
+
+    </div>
+
+    <!-- SECCION 2 -->
+    <div class="gameBox bg2">
+
+        <section>
+            <img src="../images/luminaria/lde_0.png" class="coverImg" alt="Gameplay" />
+        </section>
+
+        <section>
+            <h1>FEATURE 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit quisque sollicitudin,
+                cras integer dictumst accumsan imperdiet tortor metus torquent, curabitur hac
+                aenean pulvinar pretium viverra nibh euismod. Imperdiet sed pretium sodales
+                pharetra porta nisi eleifend ullamcorper semper porttitor quis sollicitudin
+                venenatis viverra, ultricies per aliquam facilisi augue volutpat lacus neque
+                feugiat fames maecenas gravida. Libero urna ac a erat taciti sagittis non congue
+                ad, commodo pretium dictum curabitur sed porttitor mauris enim, quam sociosqu
+                arcu euismod odio rhoncus duis placerat.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- SECCION 3 -->
+    <div class="gameBox bg3">
+
+        <section>
+            <h1>FEATURE 3</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit quisque sollicitudin,
+                cras integer dictumst accumsan imperdiet tortor metus torquent, curabitur hac
+                aenean pulvinar pretium viverra nibh euismod. Imperdiet sed pretium sodales
+                pharetra porta nisi eleifend ullamcorper semper porttitor quis sollicitudin
+                venenatis viverra, ultricies per aliquam facilisi augue volutpat lacus neque
+                feugiat fames maecenas gravida. Libero urna ac a erat taciti sagittis non congue
+                ad, commodo pretium dictum curabitur sed porttitor mauris enim, quam sociosqu
+                arcu euismod odio rhoncus duis placerat.
+            </p>
+        </section>
+
+        <section>
+            <img src="../images/luminaria/lde_0.png" class="coverImg" alt="Gameplay" />
+        </section>
+
     </div>
 
     <!-- PIE DE PAGINA -->

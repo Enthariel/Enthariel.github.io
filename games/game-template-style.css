@@ -1,0 +1,74 @@
+﻿:root {
+    --bgColor1: #e3e3e3;
+    --bgColor2: #a68019;
+    --bgColor3: #756845;
+    --textColor1: #a68019;
+    --textColor2: black;
+    --textColor3: white;
+}
+
+@font-face {
+    font-family: GameFont;
+    src: url('../fonts/Caviar_Dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GameFontBold;
+    src: url('../fonts/Caviar_Dreams/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gameBox{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: GameFont;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5vw;
+    flex-wrap: wrap;
+}
+
+.gameBox section{
+    flex: 0 1 40%;
+}
+
+.gameBox h1{
+    font-size: 10vh;
+    font-family: GameFontBold;
+    margin: 1vh;
+}
+
+.bg1{
+    background-color: var(--bgColor1);
+    color: var(--textColor1);
+}
+
+.bg2 {
+    background-color: var(--bgColor2);
+    color: var(--textColor2);
+}
+
+.bg3 {
+    background-color: var(--bgColor3);
+    color: var(--textColor3);
+}
+
+@media(max-width: 1200px) {
+
+    .gameBox section {
+        flex: 0 1 98%;
+    }
+
+    .gameBox h1 {
+        font-size: 6vh;
+        font-family: GameFontBold;
+        margin: 3vh;
+    }
+
+}
