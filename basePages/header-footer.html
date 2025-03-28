@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="../styles.css" rel="stylesheet" />
-    <link href="images/logo/logo.ico" rel="icon" type="image/x-icon" />
+    <link href="../images/logo/logo.ico" rel="icon" type="image/x-icon" />
     <title>Home | Enthariel Games</title>
 </head>
 <body>
@@ -12,25 +12,27 @@
     <header id="header">
         <a href="../index.html#start" class="logoDegree"></a>
         <a href="../index.html#news" class="mobileHidden">
-            <p>NOTICIAS</p>
+            <p class="es">NOTICIAS</p>
+            <p class="en">NEWS</p>
         </a>
         <a href="../index.html#games" class="mobileHidden">
-            <p>JUEGOS</p>
+            <p class="es">JUEGOS</p>
+            <p class="en">GAMES</p>
         </a>
         <!-- TWITTER -->
-        <a href="#" class="mobileHidden">
+        <a href="https://x.com/EntharielGames" class="mobileHidden" target="_blank">
             <section class="twitter social"></section>
         </a>
         <!-- INSTAGRAM -->
-        <a href="#" class="mobileHidden">
+        <a href="https://www.instagram.com/entharielgames/" class="mobileHidden" target="_blank">
             <section class="instagram social"></section>
         </a>
         <!-- LINKEDIN -->
-        <a href="#" class="mobileHidden">
+        <a href="https://es.linkedin.com/company/enthariel-games" class="mobileHidden" target="_blank">
             <section class="linkedin social"></section>
         </a>
         <!-- YOUTUBE -->
-        <a href="#" class="mobileHidden">
+        <a href="https://www.youtube.com/@EntharielGames" class="mobileHidden" target="_blank">
             <section class="youtube social"></section>
         </a>
     </header>
@@ -39,9 +41,32 @@
 
     <!-- FOOTER -->
     <footer id="footer">
+        <section>
+            <h2 class="es">Redes</h2>
+            <h2 class="en">Social</h2>
+            <article class="row">
+                <!-- TWITTER -->
+                <a href="https://x.com/EntharielGames" target="_blank">
+                    <section class="twitter social"></section>
+                </a>
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/entharielgames/" target="_blank">
+                    <section class="instagram social"></section>
+                </a>
+                <!-- LINKEDIN -->
+                <a href="https://es.linkedin.com/company/enthariel-games" target="_blank">
+                    <section class="linkedin social"></section>
+                </a>
+                <!-- YOUTUBE -->
+                <a href="https://www.youtube.com/@EntharielGames" target="_blank">
+                    <section class="youtube social"></section>
+                </a>
+            </article>
+        </section>
+
         <a href="https://maps.app.goo.gl/eM6ULEpkJdiXW6tj8" target="_blank">
-            <h2 class="es">Ubicación</h2>
-            <p class="es">Universidad Pablo de Olavide (UPO Autovía A-376, Km 1. Edificio 45. Alexander von Humboldt, 41013 Sevilla</p>
+            <h2 class="es">Ubicacion</h2>
+            <p class="es">Universidad Pablo de Olavide (UPO Autovia A-376, Km 1. Edificio 45. Alexander von Humboldt, 41013 Sevilla</p>
         </a>
 
         <a href="mailto:entharielgames.gmail.com">
@@ -49,5 +74,8 @@
             <p class="es yellow">entharielgames.gmail.com</p>
         </a>
     </footer>
+
+    <!-- SCRIPT PARA DETECTAR EL IDIOMA -->
+    <script src="../scripts/languageHandler.js"></script>
 </body>
 </html>

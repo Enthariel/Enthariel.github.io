@@ -3,10 +3,12 @@ if (window.location.pathname.endsWith("index.html")) {
     document.getElementById("header").innerHTML = `
     <a href="index.html#start" class="logoDegree"></a>
     <a href="index.html#news" class="mobileHidden">
-        <p>NOTICIAS</p>
+        <p class="es">NOTICIAS</p>
+        <p class="en">NEWS</p>
     </a>
     <a href="index.html#games" class="mobileHidden">
-        <p>JUEGOS</p>
+        <p class="es">JUEGOS</p>
+        <p class="en">GAMES</p>
     </a>
     <!-- TWITTER -->
     <a href="https://x.com/EntharielGames" class="mobileHidden" target="_blank">
@@ -30,10 +32,12 @@ if (window.location.pathname.endsWith("index.html")) {
     document.getElementById("header").innerHTML = `
     <a href="../index.html#start" class="logoDegree"></a>
     <a href="../index.html#news" class="mobileHidden">
-        <p>NOTICIAS</p>
+        <p class="es">NOTICIAS</p>
+        <p class="en">NEWS</p>
     </a>
     <a href="../index.html#games" class="mobileHidden">
-        <p>JUEGOS</p>
+        <p class="es">JUEGOS</p>
+        <p class="en">GAMES</p>
     </a>
     <!-- TWITTER -->
     <a href="https://x.com/EntharielGames" class="mobileHidden" target="_blank">
