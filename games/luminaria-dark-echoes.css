@@ -38,11 +38,11 @@
     flex: 0 1 40%;
 }
 
-    .gameBox h1 {
-        font-size: 10vh;
-        font-family: GameFontBold;
-        margin: 1vh;
-    }
+.gameBox h1{
+    font-size: 10vh;
+    font-family: GameFontBold;
+    margin: 1vh;
+}
 
 .bg1{
     background-color: var(--bgColor1);
@@ -59,13 +59,6 @@
     color: var(--textColor3);
 }
 
-.subtitle{
-    font-size: 3vh;
-    font-family: GameFontBold;
-    margin: 0;
-    margin-left: 1vw;
-}
-
 @media(max-width: 1200px) {
 
     .gameBox section {
@@ -76,12 +69,6 @@
         font-size: 6vh;
         font-family: GameFontBold;
         margin: 3vh;
-        margin-bottom: 1vh;
     }
 
-    .subtitle {
-        font-size: 3vh;
-        font-family: GameFontBold;
-        margin: 1vh;
-    }
 }

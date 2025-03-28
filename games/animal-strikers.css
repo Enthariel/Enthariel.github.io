@@ -1,8 +1,8 @@
 ﻿:root {
     --bgColor1: #e3e3e3;
-    --bgColor2: #a68019;
-    --bgColor3: #756845;
-    --textColor1: #a68019;
+    --bgColor2: #51b551;
+    --bgColor3: #6abbc4;
+    --textColor1: #ac7bb3;
     --textColor2: black;
     --textColor3: white;
 }
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: GameFontBold;
-    src: url('../fonts/Caviar_Dreams/CaviarDreams_Bold.ttf') format('truetype');
+    src: url('../fonts/Round_Pop/RoundPop.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
