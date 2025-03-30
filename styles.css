@@ -25,6 +25,10 @@ body
     font-weight: 600;
 }
 
+ul{
+    width: 100%;
+}
+
 p {
     font-size: 2vh;
 }
@@ -386,10 +390,30 @@ a{
     gap: 1vh;
 }
 
+.flex30{
+    flex: 0 1 28%;
+}
+
+.flex50{
+    flex: 0 1 48%;
+}
+
+.flex70{
+    flex: 0 1 68%;
+}
+
+.flex100{
+    flex: 0 1 98%;
+}
+
 .row{
     display: flex;
     flex-direction: row;
     gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .rItem15{
@@ -566,6 +590,47 @@ a{
     padding-bottom: 7vh;
     color: white;
     text-align: center;
+}
+
+.blogTitle {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    padding-top: 12vh;
+}
+
+.blogRegion{
+    padding: 1vh;
+    background-color: lightgray;
+    min-height: 60vh;
+    color: var(--darkGrey);
+    padding-left: 25vw;
+    padding-right: 25vw;
+    gap: 2vh;
+    padding-bottom: 10vh;
+}
+
+.blogSection{
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.blogSectionTitle{
+    text-align: center;
+    color: white;
+    background-color: var(--darkGrey);
+    padding: 1vh;
+}
+
+.divisor{
+    width: 100%;
+    background-color: var(--darkGrey);
+    height: 5px;
+    border-radius: 1vh;
 }
 
 /*Cajas con disenios*/
@@ -776,4 +841,17 @@ a{
     .column{
         margin-bottom: 2vh;
     }
+
+    .flex30,
+    .flex50,
+    .flex70,
+    .flex100{
+        flex: 0 1 98%;
+    }
+
+    .blogRegion{
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
 }
